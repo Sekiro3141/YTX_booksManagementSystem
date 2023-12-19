@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Administrator Information Update</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    
+    h2 {
+      color: #444;
+      font-size: 24px;
+      text-align: center;
+      margin-top: 20px;
+    }
+    
+    form {
+      background: #fff;
+      max-width: 400px;
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    form input[type="text"], form input[type="submit"] {
+      width: 95%;
+      padding: 10px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    
+    form input[type="submit"] {
+      width: 100%;
+      background-color: #4CAF50;
+      color: white;
+      cursor: pointer;
+      border: none;
+    }
+    
+    form input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+    
+    /* Responsive */
+    @media screen and (max-width: 600px) {
+      form {
+        width: 100%;
+        margin: 0;
+      }
+    }
+    
+      </style>
+</head>
+
+<body>
+  <h2>Administrator Information Update</h2>
+  <form method="post" action="/admin/manager/m_update">
+    Account: <input type="text" name="manager_zh" value="admin1" readonly style="border:none;outline:none"><br>
+    Age: <input type="text" name="manager_age"><br>
+    Phone Number: <input type="text" name="manager_phone"><br>
+    Controlled Book Category: <input type="text" name="manager_book_id"><br>
+    Password: <input type="text" name="manager_ma"><br>
+    <input type="submit">
+  </form>
+</body>
+
+</html>
